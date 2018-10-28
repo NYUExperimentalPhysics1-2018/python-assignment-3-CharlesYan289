@@ -10,6 +10,7 @@ requires completion of both of these items
 
 from tanks import tankShot
 from tanks import drawBoard
+from tanks import drawBox
 import matplotlib.pyplot as plt
 
 tank1box = [10,15,0,5]
@@ -17,6 +18,7 @@ tank2box = [90,95,0,5]
 obstacleBox = [40,60,0,50]
 
 plt.figure(1)
+
 drawBoard(tank1box,tank2box,obstacleBox,1)
 hit = tankShot(tank2box, obstacleBox, 12.5,2.5,100,70)
 plt.title ('a shot that goes over the target')
